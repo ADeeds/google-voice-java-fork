@@ -1776,7 +1776,7 @@ public class Voice {
 	 * @throws IOException
 	 *             Signals that an I/O exception has occurred.
 	 */
-	String get(String urlString) throws IOException {
+	public String get(String urlString) throws IOException {
 		URL url = new URL(urlString);
 		//+ "?auth=" + URLEncoder.encode(authToken, enc));
 
