@@ -307,7 +307,22 @@ public class Voice {
 	public Voice(String user, String pass) throws IOException {
 		init(user, pass, null, true, GOOGLE, null, null);
 	}
-
+	/**
+	 * Instantiates a new voice. Verbose output is optional
+	 * 
+	 * @param user
+	 *            the username in the format of user@gmail.com or user@googlemail.com
+	 * @param pass
+	 *            the password
+	 * @param printDebugIntoToSystemOut
+	 *            the print debug into to system out
+	 * @throws IOException
+	 *             Signals that an I/O exception has occurred.
+	 */
+	public Voice(String user, String pass,
+			boolean printDebugIntoToSystemOut) throws IOException {
+		init(user, pass, null, printDebugIntoToSystemOut, GOOGLE, null, null);
+	}
 	/**
 	 * Instantiates a new voice. Custom Source Variable allowed, and
 	 * printDebugIntoSystemOut which allows for Verbose output.
